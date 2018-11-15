@@ -1,0 +1,181 @@
+alias: UM
+environments:
+  default:
+    universal-messaging-umserver.common-local-users-administrator.password: ''
+    universal-messaging-umserver.common-local-users-test.password: ''
+    universal-messaging-umserver.um-jndi-cf-cfnonshareddurable.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-cf-cfshareddurable.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-cf-cftest.url: nsp://127.0.0.1:9000
+    universal-messaging-umserver.um-jndi-cf-eventfactory.url: nsp://VMSIQACLOUD02.eur.ad.sag:9000
+    universal-messaging-umserver.um-jndi-cf-qcf.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-cf-tcfnonshareddurable.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-cf-tcfshareddurable.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-cf-xacf.url: nsp://localhost:9000/
+    universal-messaging-umserver.um-jndi-dest-jndiqueue.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-jnditopic.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuemixed.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queueoff-heap.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuepaged.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuepersistent.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuereliable.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuesimple.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-queuetransient.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-test_jms.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicmixed.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicoff-heap.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicpaged.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicpersistent.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicreliable.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topicsimple.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-topictransient.autocreatedest: 'false'
+    universal-messaging-umserver.um-jndi-dest-ttest.autocreatedest: 'false'
+layers:
+  UM-layer:
+    templates: UM-template
+provision:
+  default:
+    UM-layer: ${nodes}
+templates:
+  UM-template:
+    products:
+      NUMRealmServer:
+        umserver:
+          configuration:
+            Universal-Messaging-umserver:
+              UM-JNDI-CF:
+                UM-JNDI-CF-QCF:
+                  name: QCF
+                  type: QueueConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-qcf.url}
+                UM-JNDI-CF-CFSharedDurable:
+                  name: CFSharedDurable
+                  type: ConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-cfshareddurable.url}
+                  durableType: Shared
+                UM-JNDI-CF-TCFNonSharedDurable:
+                  name: TCFNonSharedDurable
+                  type: TopicConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-tcfnonshareddurable.url}
+                  durableType: Named
+                UM-JNDI-CF-EventFactory:
+                  name: EventFactory
+                  type: ConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-eventfactory.url}
+                  durableType: Shared
+                UM-JNDI-CF-CFNonSharedDurable:
+                  name: CFNonSharedDurable
+                  type: ConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-cfnonshareddurable.url}
+                  durableType: Named
+                UM-JNDI-CF-XACF:
+                  name: XACF
+                  type: XAConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-xacf.url}
+                UM-JNDI-CF-CFTest:
+                  name: CFTest
+                  type: ConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-cftest.url}
+                  durableType: Shared
+                UM-JNDI-CF-TCFSharedDurable:
+                  name: TCFSharedDurable
+                  type: TopicConnectionFactory
+                  url: ${universal-messaging-umserver.um-jndi-cf-tcfshareddurable.url}
+                  durableType: Shared
+              UM-JNDI-DEST:
+                UM-JNDI-DEST-QueuePaged:
+                  name: QueuePaged
+                  type: Queue
+                  storeName: QueuePaged
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuepaged.autocreatedest}
+                UM-JNDI-DEST-TTest:
+                  name: TTest
+                  type: Topic
+                  storeName: TTest
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-ttest.autocreatedest}
+                UM-JNDI-DEST-QueueReliable:
+                  name: QueueReliable
+                  type: Queue
+                  storeName: QueueReliable
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuereliable.autocreatedest}
+                UM-JNDI-DEST-TopicReliable:
+                  name: TopicReliable
+                  type: Topic
+                  storeName: TopicReliable
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicreliable.autocreatedest}
+                UM-JNDI-DEST-QueueTransient:
+                  name: QueueTransient
+                  type: Queue
+                  storeName: QueueTransient
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuetransient.autocreatedest}
+                UM-JNDI-DEST-TopicTransient:
+                  name: TopicTransient
+                  type: Topic
+                  storeName: TopicTransient
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topictransient.autocreatedest}
+                UM-JNDI-DEST-QueuePersistent:
+                  name: QueuePersistent
+                  type: Queue
+                  storeName: QueuePersistent
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuepersistent.autocreatedest}
+                UM-JNDI-DEST-JNDIQueue:
+                  name: JNDIQueue
+                  type: Queue
+                  storeName: JNDIQueue
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-jndiqueue.autocreatedest}
+                UM-JNDI-DEST-QueueMixed:
+                  name: QueueMixed
+                  type: Queue
+                  storeName: QueueMixed
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuemixed.autocreatedest}
+                UM-JNDI-DEST-TopicPersistent:
+                  name: TopicPersistent
+                  type: Topic
+                  storeName: TopicPersistent
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicpersistent.autocreatedest}
+                UM-JNDI-DEST-JNDITopic:
+                  name: JNDITopic
+                  type: Topic
+                  storeName: JNDITopic
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-jnditopic.autocreatedest}
+                UM-JNDI-DEST-test_jms:
+                  name: test_jms
+                  type: Topic
+                  storeName: test_jms
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-test_jms.autocreatedest}
+                UM-JNDI-DEST-QueueSimple:
+                  name: QueueSimple
+                  type: Queue
+                  storeName: QueueSimple
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queuesimple.autocreatedest}
+                UM-JNDI-DEST-TopicOff-Heap:
+                  name: TopicOff-Heap
+                  type: Topic
+                  storeName: TopicOff-Heap
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicoff-heap.autocreatedest}
+                UM-JNDI-DEST-QueueOff-Heap:
+                  name: QueueOff-Heap
+                  type: Queue
+                  storeName: QueueOff-Heap
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-queueoff-heap.autocreatedest}
+                UM-JNDI-DEST-TopicMixed:
+                  name: TopicMixed
+                  type: Topic
+                  storeName: TopicMixed
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicmixed.autocreatedest}
+                UM-JNDI-DEST-TopicPaged:
+                  name: TopicPaged
+                  type: Topic
+                  storeName: TopicPaged
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicpaged.autocreatedest}
+                UM-JNDI-DEST-TopicSimple:
+                  name: TopicSimple
+                  type: Topic
+                  storeName: TopicSimple
+                  autoCreateDest: ${universal-messaging-umserver.um-jndi-dest-topicsimple.autocreatedest}
+              COMMON-LOCAL-USERS:
+                COMMON-LOCAL-USERS-Administrator:
+                  '@id': Administrator
+                  Password: ${universal-messaging-umserver.common-local-users-administrator.password}
+                COMMON-LOCAL-USERS-test:
+                  '@id': test
+                  Password: ${universal-messaging-umserver.common-local-users-test.password}
