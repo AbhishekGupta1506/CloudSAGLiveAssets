@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="modifiable">false</value>
+  <value name="originURI">file:///C:\Users\Administrator\Desktop\samplexslt.xslt</value>
+  <value name="node_nsName">CT_samplepackage.XSLTService:sample_xsltService</value>
+  <value name="node_pkg">CT_Samplepackage</value>
+  <value name="node_type">xsltservice</value>
+</Values>

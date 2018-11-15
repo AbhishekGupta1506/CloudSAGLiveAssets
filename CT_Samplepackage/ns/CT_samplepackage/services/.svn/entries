@@ -1,0 +1,71 @@
+10
+
+dir
+6251103
+http://svndae.hq.sag:1818/svn/sag/test-automation/siqa/CloudTransform/assets/912/IS/CT_Samplepackage/ns/CT_samplepackage/services
+http://svndae.hq.sag:1818/svn/sag
+
+
+
+2018-05-07T13:05:23.859571Z
+6246099
+mjan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+297cc777-943f-412d-8246-ef60bc8e6f84
+
+Cservices
+dir
+
+flow
+dir
+
+java
+dir
+
+node.idf
+file
+
+
+
+
+2018-05-21T09:46:29.999000Z
+6c7d23d1c753e9e750d7e82125817d0a
+2018-04-25T09:05:13.902780Z
+6243140
+mjan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+264
+
