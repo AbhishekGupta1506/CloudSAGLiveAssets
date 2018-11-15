@@ -1,4 +1,0 @@
-SAG60723,MJAN,Marathahalli,Bangalore,Karnataka,560037
-SAG60573,ABG,BTM,Bangalore,Karnataka,560025
-SAG60501,MEEA,HAL,Bangalore,Karnataka,560045
-SAG50700,MOSY,Koramangala,Bangalore,Karnataka,560048
