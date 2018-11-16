@@ -1,89 +1,0 @@
-10
-
-dir
-6251103
-http://svndae.hq.sag:1818/svn/sag/test-automation/siqa/CloudTransform/assets/912/IS/CT_Samplepackage/ns/CT_samplepackage/services/flow
-http://svndae.hq.sag:1818/svn/sag
-
-
-
-2018-05-07T13:05:23.859571Z
-6246099
-mjan
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-297cc777-943f-412d-8246-ef60bc8e6f84
-
-AuthenticateuserFromFF
-dir
-
-currencyConverter
-dir
-
-generateTransacationID
-dir
-
-globalVariableSubstitution
-dir
-
-insertTransactionDetails
-dir
-
-node.idf
-file
-
-
-
-
-2018-05-21T09:46:31.045000Z
-082a7c446ed0bbd529f5646694f62293
-2018-04-26T12:23:30.298389Z
-6243650
-mjan
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-73
-
-performTransaction
-dir
-
-publishservice
-dir
-
-signupUser
-dir
-
-transactionProcessor
-dir
-
