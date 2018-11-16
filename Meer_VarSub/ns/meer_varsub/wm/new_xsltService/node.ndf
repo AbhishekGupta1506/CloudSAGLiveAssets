@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Values version="2.0">
-  <null name="originURI"/>
-  <value name="node_nsName">meer_varsub.wm:new_xsltService</value>
-  <value name="node_pkg">Meer_VarSub</value>
-  <value name="node_type">xsltservice</value>
-</Values>
