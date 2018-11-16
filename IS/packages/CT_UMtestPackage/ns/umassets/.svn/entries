@@ -1,0 +1,71 @@
+10
+
+dir
+6250950
+http://svndae.hq.sag:1818/svn/sag/test-automation/siqa/CloudTransform/CT_UMtestPackage/ns/umassets
+http://svndae.hq.sag:1818/svn/sag
+
+
+
+2018-05-24T12:14:25.310227Z
+6250950
+abg
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+297cc777-943f-412d-8246-ef60bc8e6f84
+
+docs
+dir
+
+jmsMessaging
+dir
+
+nativeMessaging
+dir
+
+node.idf
+file
+
+
+
+
+2018-05-23T09:53:18.566000Z
+f53a03b4e9d4e5e96c55851b86f1427b
+2018-05-24T12:14:25.310227Z
+6250950
+abg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+247
+

@@ -1,0 +1,123 @@
+10
+
+dir
+6251103
+http://svndae.hq.sag:1818/svn/sag/test-automation/siqa/CloudTransform/assets/912/IS/CT_Samplepackage
+http://svndae.hq.sag:1818/svn/sag
+
+
+
+2018-05-07T13:05:23.859571Z
+6246099
+mjan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+297cc777-943f-412d-8246-ef60bc8e6f84
+
+.project
+file
+
+
+
+
+2018-05-21T09:46:31.186000Z
+88331f9930bb422a47106a277e10c39f
+2018-04-25T09:05:13.902780Z
+6243140
+mjan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+417
+
+code
+dir
+
+config
+dir
+
+doc
+dir
+
+lib
+dir
+
+manifest.v3
+file
+6251106
+
+
+
+2018-05-21T09:46:31.186000Z
+55c36948cd7d1e1ed7386721d2adb8f2
+2018-05-25T06:30:45.943374Z
+6251106
+abg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+684
+
+ns
+dir
+
+pub
+dir
+
+resources
+dir
+
+templates
+dir
+
+web
+dir
+

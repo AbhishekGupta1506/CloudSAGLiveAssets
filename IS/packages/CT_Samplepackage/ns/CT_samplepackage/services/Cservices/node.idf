@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <value name="shared">CglzdGF0aWMgewoJICAgIHRyeSB7CgkgICAgICAgIFN5c3RlbS5sb2FkTGlicmFyeSgiQ1Rfc2Ft
+cGxlcGFja2FnZV9zZXJ2aWNlc19Dc2VydmljZXMiKTsKCSAgICAgICAgSm91cm5hbExvZ2dlci5s
+b2coRGVidWdNc2cuTE9HX01TRywgSm91cm5hbExvZ2dlci5GQUNfUEFDS0FHRSwgSm91cm5hbExv
+Z2dlci5JTkZPLCAKCQkJCSJMb2FkaW5nIG5hdGl2ZSBsaWJyYXJ5OiBDVF9zYW1wbGVwYWNrYWdl
+X3NlcnZpY2VzX0NzZXJ2aWNlcyIpOwoJICAgICAgIAkgICAgICAgIAoJICAgICAgICAKCSAgICAg
+ICAgCgkgICAgfSBjYXRjaCAoVW5zYXRpc2ZpZWRMaW5rRXJyb3IgZSkgewoJICAgICAgICBKb3Vy
+bmFsTG9nZ2VyLmxvZ0Vycm9yKERlYnVnTXNnLkxPR19NU0csIEpvdXJuYWxMb2dnZXIuRkFDX1BB
+Q0tBR0UsIAoJCQkJZS5nZXRNZXNzYWdlKCkpOwoJICAgIH0KCX0KCQpuYXRpdmUgc3RhdGljIFZh
+bHVlcyBjY29tbWlzc2lvbkNhbGN1bGF0b3IoU2Vzc2lvbiBzZXNzaW9uLCBWYWx1ZXMgaW4pOwoJ
+</value>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.app.b2b.server.Session</value>
+    <value>com.wm.util.JournalLogger</value>
+    <value>com.wm.util.DebugMsg</value>
+  </array>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+</Values>
