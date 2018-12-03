@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">CT_Samplepackage</value>
+  <value name="version">1.0</value>
+  <value name="build">10.3.71</value>
+  <value name="patch_nums"></value>
+  <null name="description"/>
+  <value name="target_pkg_version">1.0</value>
+  <value name="jvm_version">1.8.0_181</value>
+  <value name="source_server_version">10.3.0.0</value>
+  <value name="target_server_version">10.3.0.0</value>
+  <value name="time">2018-12-03 09:50:27 PST</value>
+  <value name="type">full</value>
+  <value name="retainPatchHistory">yes</value>
+  <value name="target_pkg_name">CT_Samplepackage</value>
+  <value name="publisher">VMSIQACLOUD02.eur.ad.sag</value>
+</Values>

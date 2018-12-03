@@ -1,0 +1,4 @@
+#aclmap for package: CT_Samplepackage
+#Mon Dec 03 09:50:27 PST 2018
+CT_samplepackage.services.flow\:getAllUsersDetails=Anonymous
+CT_samplepackage.wsdl\:new_wsd=Anonymous
